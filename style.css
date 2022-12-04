@@ -1,0 +1,84 @@
+*
+{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #020202;
+  cursor: crosshair;
+}
+canvas
+{
+  display:block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.heart
+{
+  color: red;
+  font-size: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: changer;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.box
+{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 10%;
+}
+.box h1
+{
+  font-size: 120px;
+  color: #fff;
+  animation-name: changer;
+  animation-duration:0.6s;
+  animation-delay:1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0, 0, 0, 0);
+}
+
+.box h2
+{
+  font-size: 70px;
+  margin-bottom: 30px;
+  color: #00fd00;
+}
+
+@keyframes changer
+{
+    0% {color:yellow;}
+    2% {color:green;}
+    3% {color:violin;}
+    4% {color:blue;}
+    5% {color:brown;}
+    6% {color:white;}
+    7% {color:red;}
+    8% {color:orange;}
+    9% {color:pink;}
+    35% {color:green;}
+    67% {color:cyan;}
+    68% {color:red;}
+    69% {color:lime;}
+    70% {color:cyan;}
+    71% {color:yellow;}
+    72% {color:magenta;}
+    73% {color:yellow;}
+    94% {color:green;}
+    95% {color:blue;}
+    96% {color:white;}
+    97% {color:red;}
+    100% {color:lime;}
+}
+
